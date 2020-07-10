@@ -1,0 +1,34 @@
+create table biz_marketing_solo_product(
+    id,
+    shop_product_id,
+    solo_total_inventory,
+    solo_remain_inventory
+    version int(11) default 1 not null
+);
+
+create table biz_shop_product(
+    id,
+    product_id,
+    product_name,
+    product_desc,
+    product_img_uri,
+    product_category,
+    total_inventory,
+    remain_inventory,
+    version int(11) default 1 not null
+)
+
+create table biz_shop_user(
+    id,
+    user_id,
+    user_name，
+    phone
+)
+
+create table biz_shop_order(
+    id,
+    user_id,
+    product_id,
+    order_status,
+    address_id
+)
